@@ -1,0 +1,14 @@
+{% extends "quiz/base.html" %}
+
+{% block base_container %}
+{% for quiz in quizzes %}
+    <div class="card">
+        <img class="card-img-top" src="holder.js/100x180/" alt="Title" />
+        <div class="card-body">
+            <p class="card-text">{{ quiz.author }}</p>
+            <h4 class="card-title">{{ quiz.title }}</h4>
+        </div>
+    </div>
+    
+{% endfor %}
+{% endblock base_container %}
